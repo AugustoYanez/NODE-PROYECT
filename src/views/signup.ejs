@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <%- include('partials//head.ejs') %>
+</head>
+<body>
+    
+    <%- include('partials/navigation.ejs') %>
+
+    <main class="vh-100 container pt-2 text-center d-flex justify-content-center align-items-center">
+
+        <section>
+            <h1 class="display-1 p-8 pt-2  d-flex justify-content-center">
+ Sing Up
+            </h1>
+        
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Username </label>
+                    <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="userHelp">
+
+                  </div>
+
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            
+                </div>
+                <button type="submit" class="btn btn-primary">Submit, and crreate.</button>
+              </form>
+
+
+
+        </section>
+    </main>
+    <script src="/src/login.js"></script>
+</body>
+</html>
